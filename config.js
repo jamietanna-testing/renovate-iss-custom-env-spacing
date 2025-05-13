@@ -6,7 +6,7 @@ module.exports = {
 		THE_SECRET: '{{ secrets.THE_SECRET }}',
 		THE_SECRET_NOT_SHOWN: '{{ secrets.THE_SECRET}}',
 	},
-	allowedPostUpgradeTasks: [
+	allowedPostUpgradeCommands: [
 		"^./dump-env$"
 	]
 }
