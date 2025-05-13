@@ -1,1 +1,2 @@
-echo "$THE_SECRET" >> /tmp/dumped-secrets
+echo "THE_SECRET: $THE_SECRET" >> /tmp/dumped-secrets
+echo "THE_SECRET_NOT_SHOWN: $THE_SECRET_NOT_SHOWN" >> /tmp/dumped-secrets

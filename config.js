@@ -8,5 +8,6 @@ module.exports = {
 	},
 	allowedPostUpgradeCommands: [
 		"^./dump-env$"
-	]
+	],
+	"allowedCommands": ["^./dump-env$"],
 }
