@@ -2,7 +2,7 @@ module example
 
 go 1.23.1
 
-require github.com/deepmap/oapi-codegen v1.12.0
+require github.com/deepmap/oapi-codegen/v2 v2.4.1
 
 require (
 	github.com/getkin/kin-openapi v0.107.0 // indirect
