@@ -45,6 +45,14 @@ $ cd /app
 env LOG_LEVEL=debug renovate jamietanna-testing/renovate-iss-custom-env-spacing
 ```
 
+This is also reproducible with:
+
+```sh
+docker run -e RENOVATE_TOKEN=$(gh auth token) -v $PWD:/app -ti ghcr.io/renovatebot/renovate:40.11.13 bash
+$ cd /app
+env LOG_LEVEL=debug renovate jamietanna-testing/renovate-iss-custom-env-spacing
+```
+
 ## Current behavior
 
 This currently outputs the following to `/tmp/dumped-secrets`:
@@ -62,3 +70,4 @@ Both secret values will be output.
 
 ## Link to the Renovate issue or Discussion
 
+https://github.com/renovatebot/renovate/discussions/35924
